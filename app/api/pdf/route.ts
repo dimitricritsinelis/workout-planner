@@ -39,7 +39,8 @@ export async function POST(req: NextRequest) {
 
     await browser.close();
 
-    return new NextResponse(pdf, {
+    const file = new Blob([pdf], { type: "application/pdf" });
+    return new NextResponse(file, {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": `attachment; filename="${(plan.clientName || "client")
