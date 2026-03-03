@@ -1,0 +1,816 @@
+[
+  {
+    "id": "51971b2f-7420-4c15-9fad-6126c58d1182",
+    "name": "3D Lunge",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/3d-lunge-8e8ed3d1.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "aebd69ab-19ad-4b08-9d0c-49736989bb1e",
+    "name": "Band Chest Press",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/band-chest-press-843349f6.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "71b8dfdf-bdb0-40f9-9b95-385bf208a898",
+    "name": "Banded Activation",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/banded-activation-37550941.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "8d12195c-d057-4a14-b05f-30c93aeec3ff",
+    "name": "Banded Lat Pull Apart",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/banded-lat-pull-apart-7400ff98.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "89aa59fb-35fc-4e4d-9c39-cd4ab55e8ba6",
+    "name": "DB RDL",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/db-rdl-f3c4b8a3.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "a34db159-0053-4a3b-b36e-c400f8c86d45",
+    "name": "Day 2: Movement Prep",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/day-2-movement-prep-ead6142f.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "dca89326-8ee5-46e4-90f1-2738f4c5790b",
+    "name": "Donkey Kick",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/donkey-kick-295bbdd0.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "3da170d3-4e67-4bde-add8-0c70eaeaf535",
+    "name": "Fire Hydrant",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/fire-hydrant-b7b89efd.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "1ebda883-3f84-4526-810a-fdc5d1dce48b",
+    "name": "HRPU",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/hrpu-783cfdd6.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "1bdb832e-8525-4b60-ba97-a24870c5ea8d",
+    "name": "Hamstring Sweep",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/hamstring-sweep-04bd3a6b.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "fba30a59-00f6-498b-b1b4-c5c009aa6dbf",
+    "name": "KB Deadlift",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/kb-deadlift-54d1fae6.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "9736bb47-a485-49ef-9eb5-af2ce890d972",
+    "name": "Knee Hug",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/knee-hug-ec6d6b9d.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "46adc085-1965-4491-9cdc-a1f3d3703dea",
+    "name": "Lunge w/ Rotation",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/lunge-w-rotation-53121e0e.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "cd998e2b-d633-48ca-9dbd-4a6e1be0b792",
+    "name": "Med Ball Slam",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/med-ball-slam-0beead18.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "c5389c47-4ac5-4a62-af7f-00e4fdbe119b",
+    "name": "Scap Wall Slide",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/scap-wall-slide-f9d8c62e.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "9377c9ef-0996-485b-a806-3db412ed310a",
+    "name": "Squat + Calf Raise",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/squat-calf-raise-3f6393f7.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "78fb5e79-65cd-46b7-a67c-0e754f2c7cae",
+    "name": "TRX Rollout",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/trx-rollout-203f7253.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "fac178bb-4c64-4645-b60d-4a736b5d63d0",
+    "name": "TRX Row",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/trx-row-eb7e97a6.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "4c24b924-b215-45c9-98ff-501f46c6923f",
+    "name": "TRX Squat to Row",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/trx-squat-to-row-229f8797.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "727e35f6-8751-434f-be8d-86d1b2643147",
+    "name": "Thoracic Rotation",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/thoracic-rotation-2f1fc81b.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "892627e8-3b6d-416d-8e29-59481e686249",
+    "name": "World’s Greatest Stretch",
+    "category": "Movement Prep",
+    "defaultRx": "2x8-10",
+    "image": "/exercises/worlds-greatest-stretch-e2f3282f.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "4ee9c1c0-aadc-4f35-b4c4-7d0d11cd9b50",
+    "name": "90-90 Hip Stretch",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/90-90-hip-stretch-a3949b30.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "3b91e204-5e89-4cb4-b3ab-4f619f6515dc",
+    "name": "Cobra",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/cobra-cdd5020f.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "fbd74a12-c587-4114-917c-a2935a02d31a",
+    "name": "Figure-4",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/figure-4-accd34ab.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "d1a6956f-3b8d-4e27-8a1e-9b7b49aa1b62",
+    "name": "Glute Stretch",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/glute-stretch-751e58be.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "ba99b24d-bc80-4d91-be39-5ca1c872b961",
+    "name": "Hamstring",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/hamstring-1714b00c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "09fa2052-836f-431f-9f78-3007d426a4fb",
+    "name": "Hip Flexor",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/hip-flexor-7947de68.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "9b5a4890-cd2c-4c02-a376-eea4c46db7a4",
+    "name": "Lat/Triceps",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/lat-triceps-3d96ac62.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "89894ed3-f733-4cbc-8220-9b2e35ba760d",
+    "name": "Pec Stretch",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/pec-stretch-10ebece0.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "a8ce5b97-c7bd-44b0-8c3a-9002a21b8852",
+    "name": "Quad Hip Flexor",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/quad-hip-flexor-850d052a.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "c68f7dbf-7271-4985-8a47-68aa2d93eb18",
+    "name": "Quad Stretch",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/quad-stretch-27f28563.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "292a1e6b-fe51-4291-bb91-0662f5ac6443",
+    "name": "Straight Leg Crossover",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/straight-leg-crossover-f6a6dcb2.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "bd9021c6-e345-4709-97f2-526127b20034",
+    "name": "Thread the Needle",
+    "category": "Regeneration",
+    "defaultRx": "30-60 sec",
+    "image": "/exercises/thread-the-needle-e24eccc1.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "ae5a275a-c9b9-419b-8610-82d170c785af",
+    "name": "45* Back Extension",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/45-back-extension-e214b6a5.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "11a2a0c9-225d-4adc-bcad-d6a50493ec85",
+    "name": "BW Split Squat",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/bw-split-squat-93d5b477.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "ffdbebd0-4ecb-463e-a345-2ccb68ff7eb2",
+    "name": "Battling Rope Alt Wave",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/battling-rope-alt-wave-31ec06fc.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "eb11660c-7b9c-4ed2-8aff-4da0e872a3da",
+    "name": "Bench Leg Raise",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/bench-leg-raise-f0503d62.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "2b46a2f9-76aa-47df-aca0-a01cfd4ff6e6",
+    "name": "Cable Chop",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/cable-chop-fe8f1c17.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "bb12f81b-1958-44da-8515-19e5465486b3",
+    "name": "Cable Triceps Pulldown",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/cable-triceps-pulldown-c6d444a3.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "f119be26-b540-426b-9892-f7fe018a8518",
+    "name": "Child’s Pose",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/childs-pose-b6c3b723.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "1d4049c5-ec75-4506-ad19-ae9778cd279e",
+    "name": "DB Bench Press",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-bench-press-0afa5b12.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "b20d1113-7b52-4633-96d5-0ea685d6fa75",
+    "name": "DB Gorilla Row",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-gorilla-row-ba35a251.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "967f0725-85fa-41c5-89d0-73c281923060",
+    "name": "DB Lateral Lunge",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-lateral-lunge-cd04e90a.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "94d0a648-985d-4305-bdd7-e93ac38bac62",
+    "name": "DB Lateral Raise",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-lateral-raise-d58a25b1.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "cfa7f89f-ef99-494c-b4d2-bb10308e1e45",
+    "name": "DB SA Row",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-sa-row-15ec4e45.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "f5e1a183-a7a2-4fb5-92ef-400daf4ea74f",
+    "name": "DB SL RDL",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-sl-rdl-24511a8d.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "bd7a2548-fb18-494d-84d9-8ddce1cd89d3",
+    "name": "DB Seated Shoulder Press",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-seated-shoulder-press-16855ad9.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "4ce6b2cc-2f8c-48a5-9c28-90a9718facd4",
+    "name": "DB Split Squat",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-split-squat-5e8bc99d.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "4671071a-40e4-4155-a1f0-aaf5365c95b7",
+    "name": "DB Step Up",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/db-step-up-a2388486.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "a19a5c9b-e7e1-4cb4-af50-b452895032cf",
+    "name": "Dead Bug",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/dead-bug-fffe87dd.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "addff29c-eb7d-400d-9d80-8ef6871d45ec",
+    "name": "Decline Sit Up",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/decline-sit-up-62552fe7.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "a8e4c871-b749-4f65-8198-686c2e9e2b26",
+    "name": "Elevated Plank Row",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/elevated-plank-row-39f3a14c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "ad6ed997-8cd8-416f-92d3-b155e9a83459",
+    "name": "Face Pull",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/face-pull-9f4e8acb.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "f0544059-be3c-49f0-b3c6-5e20f1c194d1",
+    "name": "Farmer Carry",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/farmer-carry-b1212a7c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "16779888-ecb5-47a8-8f04-b8b54178f362",
+    "name": "Full Plank",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/full-plank-988001f0.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "275741bd-5758-4ed6-86e2-9fa40e25d987",
+    "name": "Goblet Box Squat",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/goblet-box-squat-1959d92c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "8ac2673c-c280-4c74-b469-20dcdb1e35f1",
+    "name": "Incline Bicep Curl",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/incline-bicep-curl-f511b2ae.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "99653920-9a3e-43d5-8103-cf1036cdb6ed",
+    "name": "Incline DB Bench Press",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/incline-db-bench-press-28480475.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "ccbdb911-cd55-444f-8978-519f7e09db63",
+    "name": "Incline DB Row",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/incline-db-row-2898907c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "74c1c2a7-013d-44c7-9cc1-ec677f360da6",
+    "name": "Isometric Bicep Curl",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/isometric-bicep-curl-64b01e09.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "21ea7efe-6be3-4b60-85f9-70bfcb3ab9b9",
+    "name": "KB Bottom’s Up Carry",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/kb-bottoms-up-carry-c8013750.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "559c281c-58e2-4127-a668-4121f43941d6",
+    "name": "KB Swing",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/kb-swing-7e5f3803.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "d88e2725-0174-47b8-974c-858a25e1a881",
+    "name": "Landmine SA Press",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/landmine-sa-press-00d52e50.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "4fbc90a1-039d-40b5-91d0-81060160fbdd",
+    "name": "Landmine Squat Press",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/landmine-squat-press-cd96827f.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "a60ee05a-3c6b-47ba-813b-d3458c47450f",
+    "name": "Lat Pulldown",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/lat-pulldown-7d9f84d2.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 6
+    }
+  },
+  {
+    "id": "8f90a1c7-cafa-4b46-a503-ae856003e34a",
+    "name": "Leg Extension",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/leg-extension-c07892ec.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "0c1daddf-02f4-457e-997e-6ca33068aa92",
+    "name": "Outer Thigh",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/outer-thigh-8e577bab.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "dad33c2f-0397-49da-9d78-11822203c5e3",
+    "name": "Pallof Press + Raise",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/pallof-press-raise-b0e9da90.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "c8e8184e-628d-4043-9a00-10e382fbee9f",
+    "name": "Plank to Pushup",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/plank-to-pushup-ef2d6b5f.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 2
+    }
+  },
+  {
+    "id": "e2329fae-d4b2-4c40-848c-3ec8c377930b",
+    "name": "Seated Leg Curl",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/seated-leg-curl-79854764.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "5e0905a2-c59d-4685-b322-c03787803b2c",
+    "name": "Smith Machine Back Squat",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/smith-machine-back-squat-a40a7c81.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 8
+    }
+  },
+  {
+    "id": "2b02167b-1ead-4c76-a111-4ed85fe903e9",
+    "name": "TBDL/Hoist Deadlift",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/tbdl-hoist-deadlift-bd2ec250.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  },
+  {
+    "id": "1e2e353a-352e-469c-a9fa-00fdb3eeaa3c",
+    "name": "Wall Ball",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/wall-ball-23a3b441.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 10
+    }
+  },
+  {
+    "id": "15be5622-a84c-4b0e-a9bc-d26b1bb70c6c",
+    "name": "Wall Sit",
+    "category": "Strength Blocks",
+    "defaultRx": "3x8-12",
+    "image": "/exercises/wall-sit-0c81ff1c.png",
+    "source": {
+      "pdf": "Justin Jones - 5 Day Strength.pdf",
+      "page": 4
+    }
+  }
+]
