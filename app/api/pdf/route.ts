@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { chromium } from "playwright";
+import type { Browser, Page } from "playwright";
 import { renderPlanHtml } from "@/lib/pdf/renderPlanHtml";
 import type { Plan } from "@/lib/types";
 
@@ -13,20 +14,23 @@ export async function POST(req: NextRequest) {
     return new NextResponse("Invalid JSON body", { status: 400 });
   }
 
+  let browser: Browser | null = null;
+  let page: Page | null = null;
+
   try {
     const html = await renderPlanHtml(plan, { inlineImages: true });
 
-    const browser = await chromium.launch({
+    browser = await chromium.launch({
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
 
-    const page = await browser.newPage({
+    page = await browser.newPage({
       viewport: { width: 1200, height: 800 },
     });
 
     await page.setContent(html, { waitUntil: "load" });
 
-    const pdf = await page.pdf({
+    const pdfBuffer = await page.pdf({
       format: "letter",
       printBackground: true,
       margin: {
@@ -37,9 +41,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    await browser.close();
-
-    const file = new Blob([pdf], { type: "application/pdf" });
+    const file = new Uint8Array(pdfBuffer);
     return new NextResponse(file, {
       headers: {
         "Content-Type": "application/pdf",
@@ -50,5 +52,12 @@ export async function POST(req: NextRequest) {
     });
   } catch (e: any) {
     return new NextResponse(`PDF generation failed: ${e?.message ?? String(e)}`, { status: 500 });
+  } finally {
+    if (page) {
+      await page.close();
+    }
+    if (browser) {
+      await browser.close();
+    }
   }
 }
