@@ -1,7 +1,5 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import React from "react";
-import { renderToStaticMarkup } from "react-dom/server";
 import type { Plan, PlanDay, PlanSection } from "@/lib/types";
 
 type RenderOptions = {
@@ -35,6 +33,15 @@ function css() {
   `;
 }
 
+function escapeHtml(raw: string) {
+  return raw
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function chunkInto<T>(arr: T[], size: number): T[][] {
   const out: T[][] = [];
   for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
@@ -48,118 +55,88 @@ function sectionClass(id: string) {
   return "movement";
 }
 
-function TileGrid({ section }: { section: PlanSection }) {
+function renderTileGrid(section: PlanSection) {
   const rows = chunkInto(section.items, 4);
-  // ensure at least 1 row for consistent look
   const safeRows = rows.length ? rows : [[]];
 
-  return (
-    <div style={{ marginBottom: 12 }}>
-      <div className={`sectionHeader ${sectionClass(section.id)}`}>{section.title}</div>
-      <table className="tileTable">
-        <tbody>
-          {safeRows.map((r, idx) => (
-            <tr key={idx}>
-              {Array.from({ length: 4 }).map((_, col) => {
-                const item = r[col];
-                return (
-                  <td key={col} className="tileCell">
-                    {item ? (
-                      <>
-                        <div className="tileName">{item.name}</div>
-                        <div className="tileImgWrap">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img className="tileImg" src={item.image} alt={item.name} />
-                        </div>
+  const cells = safeRows
+    .map((row) => {
+      const cols = Array.from({ length: 4 })
+        .map((_, col) => {
+          const item = row[col];
+          if (!item) {
+            return `<td class="tileCell"></td>`;
+          }
+          return `
+            <td class="tileCell">
+              <div class="tileName">${escapeHtml(item.name)}</div>
+              <div class="tileImgWrap">
+                <img class="tileImg" src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" />
+              </div>
+            </td>
+          `;
+        })
+        .join("");
+      return `<tr>${cols}</tr>`;
+    })
+    .join("");
 
-                      </>
-                    ) : null}
-                  </td>
-                );
-              })}
-            </tr>
-          ))}
-        </tbody>
+  return `
+    <div style="margin-bottom:12px">
+      <div class="sectionHeader ${sectionClass(section.id)}">${escapeHtml(section.title)}</div>
+      <table class="tileTable">
+        <tbody>${cells}</tbody>
       </table>
     </div>
-  );
+  `;
 }
-
-function TilePage({ plan, day }: { plan: Plan; day: PlanDay }) {
-  return (
-    <div className="page">
-      <div className="header">
-        <div className="nameLine">Name: {plan.clientName || "Client"}</div>
-        <div className="subtitle">
-          <strong>{plan.planTitle || "Workout Plan"}</strong>
-        </div>
+function renderTilePage(plan: Plan, day: PlanDay) {
+  return `
+    <div class="page">
+      <div class="header">
+        <div class="nameLine">Name: ${escapeHtml(plan.clientName || "Client")}</div>
+        <div class="subtitle"><strong>${escapeHtml(plan.planTitle || "Workout Plan")}</strong></div>
       </div>
-
-      {day.sections.map((sec) => (
-        <TileGrid key={sec.id} section={sec} />
-      ))}
+      ${day.sections.map((sec) => renderTileGrid(sec)).join("")}
     </div>
-  );
+  `;
 }
+function renderDetailsPage(plan: Plan, day: PlanDay) {
+  const rows = day.sections.flatMap((sec) =>
+    sec.items.map(
+      (it) => `
+        <tr>
+          <td>
+            <div style="font-weight:700">${escapeHtml(it.name)}</div>
+            <div class="muted" style="font-size:10px">${escapeHtml(sec.title)}</div>
+          </td>
+          <td class="mono">${escapeHtml(it.rx)}</td>
+          <td class="muted"> </td>
+        </tr>
+      `
+    )
+  );
 
-function DetailsPage({ plan, day }: { plan: Plan; day: PlanDay }) {
-  return (
-    <div className="page">
-      <div className="header">
-        <div className="nameLine">Name: {plan.clientName || "Client"}</div>
-        <div className="subtitle">
-          <strong>{plan.planTitle || "Workout Plan"}</strong>
-        </div>
-        <div className="subtitle muted">{day.title}</div>
+  return `
+    <div class="page">
+      <div class="header">
+        <div class="nameLine">Name: ${escapeHtml(plan.clientName || "Client")}</div>
+        <div class="subtitle"><strong>${escapeHtml(plan.planTitle || "Workout Plan")}</strong></div>
+        <div class="subtitle muted">${escapeHtml(day.title)}</div>
       </div>
 
-      <table className="detailsTable">
+      <table class="detailsTable">
         <thead>
           <tr>
-            <th style={{ width: "40%" }}>Exercise</th>
-            <th style={{ width: "20%" }}>Rx</th>
-            <th style={{ width: "40%" }}>Notes</th>
+            <th style="width:40%">Exercise</th>
+            <th style="width:20%">Rx</th>
+            <th style="width:40%">Notes</th>
           </tr>
         </thead>
-        <tbody>
-          {day.sections.flatMap((sec) =>
-            sec.items.map((it) => (
-              <tr key={it.instanceId}>
-                <td>
-                  <div style={{ fontWeight: 700 }}>{it.name}</div>
-                  <div className="muted" style={{ fontSize: 10 }}>{sec.title}</div>
-                </td>
-                <td className="mono">{it.rx}</td>
-                <td className="muted"> </td>
-              </tr>
-            ))
-          )}
-        </tbody>
+        <tbody>${rows.join("")}</tbody>
       </table>
     </div>
-  );
-}
-
-function PdfDocument({ plan }: { plan: Plan }) {
-  return (
-    <html>
-      <head>
-        <meta charSet="utf-8" />
-        <style>{css()}</style>
-      </head>
-      <body>
-        {/* Tile pages first */}
-        {plan.days.map((day) => (
-          <TilePage key={day.id} plan={plan} day={day} />
-        ))}
-
-        {/* Then details pages */}
-        {plan.days.map((day) => (
-          <DetailsPage key={day.id + "-details"} plan={plan} day={day} />
-        ))}
-      </body>
-    </html>
-  );
+  `;
 }
 
 async function inlinePublicImages(plan: Plan): Promise<Plan> {
@@ -183,6 +160,20 @@ async function inlinePublicImages(plan: Plan): Promise<Plan> {
 
 export async function renderPlanHtml(plan: Plan, options: RenderOptions) {
   const safePlan = options.inlineImages ? await inlinePublicImages(plan) : plan;
-  const html = "<!doctype html>" + renderToStaticMarkup(<PdfDocument plan={safePlan} />);
+  const tilePages = safePlan.days.map((day) => renderTilePage(safePlan, day)).join("");
+  const detailsPages = safePlan.days.map((day) => renderDetailsPage(safePlan, day)).join("");
+
+  const html = `<!doctype html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <style>${css()}</style>
+      </head>
+      <body>
+        ${tilePages}
+        ${detailsPages}
+      </body>
+    </html>
+  `;
   return html;
 }
